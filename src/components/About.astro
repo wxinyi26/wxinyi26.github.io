@@ -2,35 +2,49 @@
 import {Icon} from "astro-icon/components";
 ---
 <section id="projects" class="my-16 mx-auto max-w-4xl px-4 md:px-0">
-    <!-- About content -->
-    <div class="flex-grow text-left">
-        <div class="relative inline-block">
-            <h2 class="text-3xl font-bold mb-2">About Me</h2>
-            <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-slate-500 to-slate-400"></div>
+    <!-- Flex container to align text and avatar side by side -->
+    <div class="flex flex-col md:flex-row items-start">
+        <!-- About content -->
+        <div class="flex-grow text-left md:w-2/3">
+            <div class="relative inline-block">
+                <h2 class="text-3xl font-bold mb-2">About Me</h2>
+                <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-slate-500 to-slate-400"></div>
+            </div>
+            <p class="text-base mt-4 md:text-lg">
+                Hi, Xinyi<span style="font-size: 0.85em; color: gray;">(she/her)</span> here! I am a computer science student at McGill University, starting in January 2022. 
+                I am passionate about software development, both front-end and back-end. 
+                Inspired by the operating systems class I took at school recently, 
+                I am also interested in anything related to systems.
+                I am currently looking for internship opportunities for Fall 2024 and Winter 2025.
+                Feel free to reach out to me if you have any questions or opportunities! Or just to chat!
+            </p>
+            <p class="text-base mt-4 md:text-lg">
+                <strong>Focus:</strong><br>
+                Full-Stack Web Development<br>
+                Distributed Systems
+            </p>
+            
+            <!-- Icons -->
+            <div class="flex justify-start items-center mt-8 space-x-4">
+                <a href="https://www.linkedin.com/in/wangxinyi26" target="_blank" class="inline-block">
+                    <Icon name="linkedin" class="w-6 h-6 md:w-8 md:h-8" />
+                </a>
+                <a href="mailto:wxinyi26@gmail.com" class="inline-block">
+                    <Icon name="email" class="w-6 h-6 md:w-8 md:h-8" />
+                </a>
+                <a href="https://github.com/XinyiWg" target="_blank" class="inline-block">
+                    <Icon name="github" class="w-6 h-6 md:w-8 md:h-8" />
+                </a>
+                <!-- <a href="https://github.com/XinyiWg" target="_blank" class="inline-block">
+                    <Icon name="discord" class="w-6 h-6 md:w-8 md:h-8" />
+                </a> -->
+                <a href="https://drive.google.com/file/d/1Ia0qhCFjX6fbALqAIZXCswAAVnDAiBLI/view?usp=drive_link" target="_blank" class="inline-block">
+                   <strong>Resume</strong> 
+                </a>
+            </div>
         </div>
-        <p class="text-base mt-4 md:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-        </p>
-        <!-- icon -->
-        <div class="flex justify-start items-center mt-8 space-x-4">
-            <a href="https://www.linkedin.com/in/wangxinyi26" target="_blank" class="inline-block">
-                <Icon name="linkedin" class="w-6 h-6 md:w-8 md:h-8" />
-            </a>
-            <a href="mailto:wxinyi26@gmail.com" class="inline-block">
-                <Icon name="email" class="w-6 h-6 md:w-8 md:h-8" />
-            </a>
-            <a href="https://github.com/XinyiWg" target="_blank" class="inline-block">
-                <Icon name="github" class="w-6 h-6 md:w-8 md:h-8" />
-            </a>
-            <a href="https://github.com/XinyiWg" target="_blank" class="inline-block">
-               <strong>Resume</strong> 
-            </a>
-            <!-- <a href="https://github.com/XinyiWg" target="_blank" class="inline-block">
-                简历
-            </a> -->
-        </div>
+        
+        <!-- Avatar -->
+        <div class="mt-4 md:mt-0 w-64 h-64 md:w-[350px] md:h-[400px] bg-cover bg-center rounded-full md:rounded-lg mx-auto md:mx-0 md:ml-8" style="background-image: url('/images/s.JPG');"></div>
     </div>
-    
-    <!-- Avatar -->
-    <!-- <div class="mt-4 md:mt-0 w-64 h-64 md:w-[350px] md:h-[400px] bg-cover bg-center rounded-full md:rounded-lg mx-auto md:mx-0" style="background-image: url('/images/s.jpg');"></div> -->
 </section>
