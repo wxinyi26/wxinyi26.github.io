@@ -12,7 +12,26 @@ import Misc from "../components/Misc.astro";
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Xinyi Website</title>
+    <title>Xinyi Wang — McGill University | Software Engineer</title>
+    <meta
+      name="description"
+      content="Xinyi Wang, Software Engineer from McGill University. Internships at Rippling, SAP, Siemens. Backend and cloud infrastructure."
+    />
+    <script type="application/ld+json">
+      {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Xinyi Wang",
+        "affiliation": { "@type": "CollegeOrUniversity", "name": "McGill University" },
+        "url": "https://wxinyi26.github.io",
+        "sameAs": [
+          "https://github.com/wxinyi26",
+          "https://www.linkedin.com/in/wangxinyi26"
+        ]
+      }
+      `}
+    </script>
   </head>
   <body>
     <Layout>
