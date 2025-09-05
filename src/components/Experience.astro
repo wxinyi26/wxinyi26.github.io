@@ -1,27 +1,133 @@
-<section id="experience" class="my-4 mx-auto max-w-4xl px-4 md:px-0">
-    <div class="relative inline-block">
-        <h2 class="text-2xl md:text-3xl font-bold mb-2">Experience</h2>
-        <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-slate-500 to-slate-400"></div>
+<section id="experience" class="mx-auto my-4 max-w-4xl px-4 md:px-0">
+  <div class="relative inline-block">
+    <h2 class="mb-2 text-2xl font-bold md:text-3xl">Experience</h2>
+    <div class="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-amber-400 to-yellow-300">
     </div>
-    
-  <!-- Education -->
-<div class="mt-4 mb-4">
-    <h3 class="text-xl md:text-2xl font-semibold mb-2">Education</h3>
-    <div>
-        <p class="text-lg md:text-xl font-medium">McGill University</p>
-        <p class="text-lg md:text-xl font-medium">B.Sc. in Computer Science</p>
-        <p class="text-md md:text-lg">Jan. 2022 - </p>
-        <p class="text-sm md:text-md text-gray-600"></p>
-    </div>
-</div>
+  </div>
 
-    
-    <!-- Internship -->
-    <div>
-        <h3 class="text-xl md:text-2xl font-semibold mb-2">Internships</h3>
-        <div class="mb-4">
-            <p class="text-md md:text-lg">Siemens Jun. 2023 - Aug. 2023</p>
-            <p class="text-sm md:text-md text-gray-600"></p>
+  <div class="mt-4 grid grid-cols-1 gap-6">
+    <!-- Education Card -->
+    <div
+      class="rounded-xl border border-slate-200 bg-white/50 shadow-sm backdrop-blur transition-shadow hover:shadow-md"
+    >
+      <div class="p-5">
+        <h3 class="mb-3 text-xl font-semibold md:text-2xl">Education</h3>
+        <div class="space-y-1">
+          <p class="text-lg font-medium md:text-xl">
+            <a
+              href="https://www.mcgill.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline-offset-2 hover:underline">McGill University 🇨🇦</a
+            >
+          </p>
+          <p class="text-lg font-medium md:text-xl">B.Sc. in Computer Science</p>
+          <p class="text-md text-slate-700 md:text-lg">Jan. 2022 - Oct. 2025</p>
         </div>
+      </div>
     </div>
+
+    <!-- Internships Card (stacked below) -->
+    <div
+      class="rounded-xl border border-slate-200 bg-white/50 shadow-sm backdrop-blur transition-shadow hover:shadow-md"
+    >
+      <div class="p-5">
+        <h3 class="mb-3 text-xl font-semibold md:text-2xl">Internships</h3>
+        <div class="divide-y divide-slate-200">
+          <!-- Rippling -->
+          <div class="py-3 first:pt-0">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <p class="text-md font-medium md:text-lg">
+                <a
+                  href="https://www.rippling.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="underline-offset-2 hover:underline">Rippling</a
+                >
+              </p>
+              <p class="mt-1 text-xs text-slate-600 md:mt-0 md:text-sm">05/2025 - 08/2025</p>
+            </div>
+            <div class="mt-2 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div class="flex flex-wrap items-center gap-2">
+                <span
+                  class="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-700 md:text-sm"
+                  >Software Engineer Intern</span
+                >
+                <span
+                  class="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-700 md:text-sm"
+                  >Cloud Infrastructure</span
+                >
+              </div>
+              <span
+                class="inline-flex items-center self-end rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-700 sm:self-auto md:text-sm"
+                >San Francisco, US 🇺🇸</span
+              >
+            </div>
+          </div>
+
+          <!-- SAP -->
+          <div class="py-3">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <p class="text-md font-medium md:text-lg">
+                <a
+                  href="https://www.sap.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="underline-offset-2 hover:underline">SAP</a
+                >
+              </p>
+              <p class="mt-1 text-xs text-slate-600 md:mt-0 md:text-sm">07/2024 - 12/2024</p>
+            </div>
+            <div class="mt-2 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div class="flex flex-wrap items-center gap-2">
+                <span
+                  class="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-700 md:text-sm"
+                  >Software Engineer Intern</span
+                >
+                <span
+                  class="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-700 md:text-sm"
+                  >Data Catalog</span
+                >
+              </div>
+              <span
+                class="inline-flex items-center self-end rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-700 sm:self-auto md:text-sm"
+                >China 🇨🇳</span
+              >
+            </div>
+          </div>
+
+          <!-- Siemens -->
+          <div class="py-3 last:pb-0">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <p class="text-md font-medium md:text-lg">
+                <a
+                  href="https://www.siemens.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="underline-offset-2 hover:underline">Siemens</a
+                >
+              </p>
+              <p class="mt-1 text-xs text-slate-600 md:mt-0 md:text-sm">06/2023 - 08/2023</p>
+            </div>
+            <div class="mt-2 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div class="flex flex-wrap items-center gap-2">
+                <span
+                  class="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-700 md:text-sm"
+                  >Developer Intern</span
+                >
+                <span
+                  class="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-700 md:text-sm"
+                  >Data Intelligence</span
+                >
+              </div>
+              <span
+                class="inline-flex items-center self-end rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-700 sm:self-auto md:text-sm"
+                >China 🇨🇳</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

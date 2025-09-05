@@ -1,50 +1,55 @@
 ---
-import {Icon} from "astro-icon/components";
+import { Icon } from "astro-icon/components";
 ---
-<section id="projects" class="my-16 mx-auto max-w-4xl px-4 md:px-0">
-    <!-- Flex container to align text and avatar side by side -->
-    <div class="flex flex-col md:flex-row items-start">
-        <!-- About content -->
-        <div class="flex-grow text-left md:w-2/3">
-            <div class="relative inline-block">
-                <h2 class="text-3xl font-bold mb-2">About Me</h2>
-                <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-slate-500 to-slate-400"></div>
-            </div>
-            <p class="text-base mt-4 md:text-lg">
-                Hi, Xinyi<span style="font-size: 0.85em; color: gray;">(she/her)</span> here! I am a computer science student at McGill University, starting in January 2022. 
-                I am passionate about software development, both front-end and back-end. 
-                Inspired by the operating systems class I took at school recently, 
-                I am also interested in anything related to systems.
-                I am currently looking for internship opportunities for Fall 2024 and Winter 2025.
-                Feel free to reach out to me if you have any questions or opportunities! Or just to chat!
-            </p>
-            <p class="text-base mt-4 md:text-lg">
-                <strong>Focus:</strong><br>
-                Full-Stack Web Development<br>
-                Distributed Systems
-            </p>
-            
-            <!-- Icons -->
-            <div class="flex justify-start items-center mt-8 space-x-4">
-                <a href="https://www.linkedin.com/in/wangxinyi26" target="_blank" class="inline-block">
-                    <Icon name="linkedin" class="w-6 h-6 md:w-8 md:h-8" />
-                </a>
-                <a href="mailto:wxinyi26@gmail.com" class="inline-block">
-                    <Icon name="email" class="w-6 h-6 md:w-8 md:h-8" />
-                </a>
-                <a href="https://github.com/XinyiWg" target="_blank" class="inline-block">
-                    <Icon name="github" class="w-6 h-6 md:w-8 md:h-8" />
-                </a>
-                <!-- <a href="https://github.com/XinyiWg" target="_blank" class="inline-block">
-                    <Icon name="discord" class="w-6 h-6 md:w-8 md:h-8" />
-                </a> -->
-                <a href="https://drive.google.com/file/d/1Ia0qhCFjX6fbALqAIZXCswAAVnDAiBLI/view?usp=drive_link" target="_blank" class="inline-block">
-                   <strong>Resume</strong> 
-                </a>
-            </div>
+
+<section id="projects" class="mx-auto my-16 max-w-4xl px-4 md:px-0">
+  <!-- Flex container to align text and avatar side by side -->
+  <div class="flex flex-col items-start md:flex-row">
+    <!-- About content -->
+    <div class="flex-grow text-left md:w-2/3">
+      <div class="relative inline-block">
+        <h2 class="mb-2 text-3xl font-bold">About Me</h2>
+        <div
+          class="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-amber-400 to-yellow-300"
+        >
         </div>
-        
-        <!-- Avatar -->
-        <div class="mt-4 md:mt-0 w-64 h-64 md:w-[350px] md:h-[400px] bg-cover bg-center rounded-full md:rounded-lg mx-auto md:mx-0 md:ml-8" style="background-image: url('/images/s.JPG');"></div>
+      </div>
+      <div class="mt-4 space-y-2 text-base md:text-lg">
+        <p>
+          Hi, my name is Xinyi <span style="font-size: 0.85em; color: gray;">(she/her)</span>!
+        </p>
+        <p>
+          I’m graduating from McGill University in 2025 with a degree in Computer Science. I
+          previously interned at Rippling, SAP and Siemens, focusing on backend development and
+          cloud infrastructure
+        </p>
+        <p>Outside of work, I enjoy spending time with my cat 🐱 and dog 🐶</p>
+        <p>Feel free to reach out if you’d like to chat!</p>
+      </div>
+
+      <!-- Icons -->
+      <div class="mt-8 flex items-center justify-start space-x-4">
+        <a href="https://www.linkedin.com/in/wangxinyi26" target="_blank" class="inline-block">
+          <Icon name="linkedin" class="h-6 w-6 md:h-8 md:w-8" />
+        </a>
+        <a href="mailto:wxinyi26@gmail.com" class="inline-block">
+          <Icon name="email" class="h-6 w-6 md:h-8 md:w-8" />
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1Ia0qhCFjX6fbALqAIZXCswAAVnDAiBLI/view?usp=drive_link"
+          target="_blank"
+          class="inline-block"
+        >
+          <strong>Resume</strong>
+        </a>
+      </div>
     </div>
+
+    <!-- Avatar -->
+    <div
+      class="mx-auto mt-4 h-64 w-64 rounded-full bg-cover bg-center md:mx-0 md:ml-8 md:mt-0 md:h-[400px] md:w-[350px] md:rounded-lg"
+      style="background-image: url('/images/s.JPG');"
+    >
+    </div>
+  </div>
 </section>

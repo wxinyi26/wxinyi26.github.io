@@ -1,28 +1,28 @@
-<nav id="desktop-nav" class="flex justify-around items-center h-[13vh] mb-0 ">
-    <div class="text-3xl font-bold">Xinyi Wang</div>
-    <ul class="hidden md:flex gap-8 list-none text-2xl">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#misc" class="nav-link">Misc.</a></li>
-    </ul>
+<nav id="desktop-nav" class="mb-0 flex h-[13vh] items-center justify-around">
+  <div class="text-3xl font-bold">Xinyi Wang</div>
+  <ul class="hidden list-none gap-8 text-2xl md:flex">
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#experience" class="nav-link">Experience</a></li>
+    <!-- <li><a href="#projects" class="nav-link">Projects</a></li> -->
+    <li><a href="#misc" class="nav-link">Misc.</a></li>
+  </ul>
 </nav>
 
 <script>
-    const navLinks = document.querySelectorAll('.nav-link');
+  const navLinks = document.querySelectorAll(".nav-link");
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', smoothScroll);
+  navLinks.forEach((link) => {
+    link.addEventListener("click", smoothScroll);
+  });
+
+  function smoothScroll(event) {
+    event.preventDefault();
+    const targetId = this.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+    const offsetTop = targetElement.offsetTop;
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
     });
-
-    function smoothScroll(event) {
-        event.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        const offsetTop = targetElement.offsetTop;
-        window.scrollTo({
-            top: offsetTop,
-            behavior: 'smooth'
-        });
-    }
+  }
 </script>
